@@ -1,5 +1,5 @@
 
-### Pre-Interview DevOps Task
+# Pre-Interview DevOps Task
 
 ## Dependency Management
 
@@ -14,7 +14,7 @@ Build management is closely tied to dependency management. The task is conceptua
 
 Dependency and build management are futile activities without API testing in place, especially in a horizontally integrated infrastructure. In a network testbed it is important to consider API in the broad sense of the word e.g., what functionalities does the testbed provide to the users. This can come in the form of an actual API like a REST interface, or it could come in a more subtle form like how environment variables are set up on testbed nodes or how network interfaces are named, addressed and assigned. Automated testing of a network testbed API in this broad sense is a significant challenge. Integration testing in our context is ensuring that the binaries and configurations produced by the build produce a properly functioning testbed within the target environment. Indeed, a great deal of integration testing may be implicit in API testing. However, because the various components that make up the testbed environment are unlikely to progress uniformly, having tests that isolate internal integration and component interaction issues versus simply observing testbed malfunction at the user level can greatly reduce diagnosis time. As a DevOps engineer you will be responsible for writing and maintaining many of these tests, and when bugs do arise you will work with developers to develop diagnostic tests that isolate the root cause in addition to patching and building a working solution.
 
-# The Task
+## The Task
 
 You were directed a GitHub repository that contains this README. That repository is a part of a mock GitHub organization that contains several code repositories. These repositories represent a set of components that are *capable* of working together to solve the common task of making a digital blueberry muffin. Each of these repositories contains code written a different programming language, has a variety of dependencies which are in no way managed. In other words, these repositories are representative of typical research-grade code. Attached to this repository you will also find a functional specification of sorts describing how the system should work from the users perspective as well as how all the internal components should interact with one another. You are also given three deployment environments which are DETERLab network environment descriptions together with a JSON manifestation of the same thing (so you don't have to write a TCL parser, _dont_ write a TCL parser). Your build tool should be capable of 
 
