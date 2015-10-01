@@ -21,12 +21,11 @@ You were directed a GitHub repository that contains this README. That repository
 Your task is to create a build, deployment and test infrastructure around this code. The infrastructure you create should accomplish the following
 
   + Automatically pull the dependencies of each component from upstream sources and provide a built in path for upgrade migration
-  + Produce a functioning digital pizza production system in:
-    - A completely virtual environment (your choosing of virtualization technology, but you should have good reasons for what you choose)
-    - A physical environment implemented in DeterLab (the design of this environment e.g., number of machines and how they are interconnected and what components they host is also up to you)
+  + Produce a functioning digital pizza production system in a completely virtual environment (your choosing of virtualization technology, but you should have good reasons for what you choose)
   + Verify the system does indeed work in each environment through at least partially automated tests
   + **_Bonus_**: Implement a continuous integration solution
   + **_Bonus_**: Deploy to a cloud provider
+  + **_Bonus_**: Deploy to an emulated physical infrastructure in DeterLab (the design of this environment e.g., number of machines and how they are interconnected and what components they host is also up to you)
 
 ## Evaluation Criteria
 
