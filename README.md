@@ -16,8 +16,12 @@ Dependency and build management are futile activities without API testing in pla
 
 ## The Task
 
-You were directed a GitHub repository that contains this README. That repository is a part of a mock GitHub organization that contains several code repositories. These repositories represent a set of components that are *capable* of working together to solve the common task of making digital pizzas. Each of these repositories contains code written a different programming language, and has a variety of dependencies which are in no way managed. In other words, these repositories are representative of typical research-grade code. Attached to this repository you will also find a functional specification of sorts describing how the system should work from the users perspective as well as how all the internal components should interact with one another. You are also given three deployment environments which are DETERLab network environment descriptions together corresponding JSON descriptions (so you don't have to write a TCL parser, _dont_ write a TCL parser). Your build tool should 
+You were directed a GitHub repository that contains this README. That repository is a part of a mock GitHub organization that contains several code repositories. These repositories represent a set of components that are *capable* of working together to solve the common task of making digital pizzas. Each of these repositories contains code written a different programming language, and has a variety of dependencies which are in no way managed. Each repository contains code that is, of itself, quite simple. However, there are little to no build facilities provided, and the 'developers' who produced this code have treated dependencies as implicit entities that 'just exist'. In other words, these repositories are representative of typical research-grade code. Attached to this repository you will also find a functional specification of sorts describing how the system should work from the users perspective as well as how all the internal components should interact with one another.
+
+Your task is to create a build, deployment and test infrastructure around this code. The infrastructure you create should accomplish the following
 
   + Automatically pull the dependencies of each component from upstream sources and provide a built in path for upgrade migration
-  + Produce a functioning digital pizza production system in each of the given environments
+  + Produce a functioning digital pizza production system in:
+    - A completely virtual environment (your choosing of virtualization technology, but you should have good reasons for what you choose)
+    - A physical environment implemented in DeterLab (the design of this environment e.g., number of machines and how they are interconnected and what components they host is also up to you)
   + Verify the system does indeed work in each environment through at least partially automated tests
