@@ -25,3 +25,5 @@ Your task is to create a build, deployment and test infrastructure around this c
     - A completely virtual environment (your choosing of virtualization technology, but you should have good reasons for what you choose)
     - A physical environment implemented in DeterLab (the design of this environment e.g., number of machines and how they are interconnected and what components they host is also up to you)
   + Verify the system does indeed work in each environment through at least partially automated tests
+  + **_Bonus_**: Implement a continuous integration solution
+  + **_Bonus_**: Deploy to a cloud provider
