@@ -36,3 +36,7 @@ Your work will be evaluated according to the following
   + Level of automation
   + Ease of use from developer perspective. 
     - Modifying individual developer build and or coding practices in some cases may be the best way to go, how will you manage that transition?
+
+## Pointers
+
+There are two diagrams attached to this repository, the **SystemDiagram** shows the overall architecture of the system and the **LamportDiagram** shows the overall behavior of the system. Notice that the bistro is connected to the main kitchen asynchronously through its refrigerator. Each repository also contains a file called typescript which is a demonstration of a successful run of the component from the view of the console. The repositories each also have a README which state the components they use.
