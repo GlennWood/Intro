@@ -16,7 +16,7 @@ Dependency and build management are futile activities without API testing in pla
 
 ## The Task
 
-You were directed a GitHub repository that contains this README. That repository is a part of a mock GitHub organization that contains several code repositories. These repositories represent a set of components that are *capable* of working together to solve the common task of making digital pizzas. Each of these repositories contains code written a different programming language, and has a variety of dependencies which are in no way managed. Each repository contains code that is, of itself, quite simple. However, there are little to no build facilities provided, and the 'developers' who produced this code have treated dependencies as implicit entities that 'just exist'. In other words, these repositories are representative of typical research-grade code. Attached to this repository you will also find a functional specification of sorts describing how the system should work from the users perspective as well as how all the internal components should interact with one another.
+You were directed a GitHub repository that contains this README. That repository is a part of a mock GitHub organization that contains several code repositories. These repositories represent a set of components that are *capable* of working together to solve the common task of making digital pizzas. Each of these repositories contains code written a different programming language, and has a variety of dependencies which are in no way managed. Each repository contains code that is, of itself, quite simple. However, there are little to no build facilities provided, and the 'developers' who produced this code have treated dependencies as implicit entities that 'just exist'. Likewise, there are some ways in which I had to configure my environment for these elements to communicate, but these configurations should be apparent from the (very simple) code in the repositories. In other words, these repositories are representative of typical research-grade code. Attached to this repository you will also find a functional specification of sorts describing how the system should work from the users perspective as well as how all the internal components should interact with one another.
 
 Your task is to create a build, deployment and test infrastructure around this code. The infrastructure you create should accomplish the following
 
@@ -27,3 +27,12 @@ Your task is to create a build, deployment and test infrastructure around this c
   + Verify the system does indeed work in each environment through at least partially automated tests
   + **_Bonus_**: Implement a continuous integration solution
   + **_Bonus_**: Deploy to a cloud provider
+
+## Evaluation Criteria
+
+Your work will be evaluated according to the following
+
+  + How well does it leverage existing OSS DevOps tooling?
+  + Level of automation
+  + Ease of use from developer perspective. 
+    - Modifying individual developer build and or coding practices in some cases may be the best way to go, how will you manage that transition?
