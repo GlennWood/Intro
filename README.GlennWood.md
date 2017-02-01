@@ -47,3 +47,7 @@ include:
    - Deploy to a cloud provider - I would use Google Platform if we get this far
    - Deploy to an emulated physical infrastructure in DeterLab - I would need an account in 
      DeterLab (if we get this far).
+   - "target operating system and processor architecture" variance
+     - each component may require its own OS environment (especially vis-a-vis DeterLab)
+     - this calls for a separate VM for each such component
+     - and the attendant cross-VM configurations (endpoints, common environment variables, etc.)
